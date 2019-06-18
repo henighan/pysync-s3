@@ -87,4 +87,5 @@ dist: clean ## builds source and wheel package
 install: clean ## install the package with dev dependencies
 	python3 -m venv venv
 	venv/bin/python -m pip install --upgrade pip
-	venv/bin/pip3 install -r requirements.dev.txt
+	venv/bin/pip3 install -r requirements_dev.txt
+	venv/bin/pip3 install -e .
